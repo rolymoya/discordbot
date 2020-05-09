@@ -41,7 +41,7 @@ async def eightball(ctx, *,question):
 @client.command()
 async def clear(ctx, amount = 1):
     await ctx.channel.purge(limit = amount + 1)
+    await ctx.send(f'{ctx.message.author.roles}')
 
 
-
-client.run('') 
+client.run('NzA3Njc3NjI5NzYyODk1ODk1.XrbrpA.6N2JPYo5Rhn9st89xIhrGgPC1Fg') 
