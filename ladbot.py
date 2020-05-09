@@ -40,8 +40,10 @@ async def eightball(ctx, *,question):
 
 @client.command()
 async def clear(ctx, amount = 1):
-    await ctx.channel.purge(limit = amount + 1)
-    await ctx.send(f'{ctx.message.author.roles}')
+    if (ctx.message.author.roles == 'LAD GOD'):
+        await ctx.channel.purge(limit = amount + 1)
+    else: await ctx.send('You do not have permission')
+    
 
 
 client.run('') 
