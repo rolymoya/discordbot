@@ -44,4 +44,4 @@ async def clear(ctx, amount = 1):
     await ctx.send(f'{ctx.message.author.roles}')
 
 
-client.run('NzA3Njc3NjI5NzYyODk1ODk1.XrbrpA.6N2JPYo5Rhn9st89xIhrGgPC1Fg') 
+client.run('') 
