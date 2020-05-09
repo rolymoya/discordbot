@@ -38,4 +38,10 @@ async def eightball(ctx, *,question):
 
     await ctx.send(f'🎱 {random.choice(responses)}')
 
+@client.command()
+async def clear(ctx, amount = 1):
+    await ctx.channel.purge(limit = amount + 1)
+
+
+
 client.run('') 
