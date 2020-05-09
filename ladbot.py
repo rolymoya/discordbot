@@ -44,9 +44,9 @@ async def clear(ctx, amount = 1):
         if(i.name == 'LAD GOD') :
 
             await ctx.channel.purge(limit = amount + 1)
-            
+
     else: await ctx.send('You do not have permission')
     
 
 
-client.run('NzA3Njc3NjI5NzYyODk1ODk1.XrcD4g.eOVWDxwcfrNZaVysE0EOVUrQPeQ') 
+client.run('') 
