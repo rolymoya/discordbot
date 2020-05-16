@@ -12,6 +12,12 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send(f'pongus: {round(client.latency * 1000)}ms')
 
+@client.command()
+async def roll(ctx, *, l, h):
+    
+
+    await ctx.send(f'{random.randint(l,h)}')
+
 
 @client.command(aliases = ['8ball'])
 async def eightball(ctx, *,question):
@@ -46,20 +52,20 @@ async def clear(ctx, amount = 1):
             await ctx.channel.purge(limit = amount + 1)
 
    # else: 
-    msgs = ctx.message.channel.fetchMessages();
-    p = 0
-    for i in ctx.message.author.roles:
-        if(i.name == 'THE LADS')
+    # msgs = ctx.message.channel.fetchMessages();
+    # p = 0
+    # for i in ctx.message.author.roles:
+    #     if(i.name == 'THE LADS')
 
-            for j in msgs:  #loop through messages to delete users messages
-                if(p == amount):
-                    break
-                else if(j.author == ctx.message.author): 
-                ctx.channel.purge(limit = 1) 
+    #         for j in msgs:  #loop through messages to delete users messages
+    #             if(p == amount):
+    #                 break
+    #             else if(j.author == ctx.message.author): 
+    #             ctx.channel.purge(limit = 1) 
 
                 
         
-        #await ctx.send('You do not have permission')
+    #     #await ctx.send('You do not have permission')
     
 
 
